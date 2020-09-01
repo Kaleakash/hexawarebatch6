@@ -1094,6 +1094,221 @@ class DemoTest {
 }	
 
 
+Day 3 : 01-09-20
+
+super and this keywords. 
+
+class A {
+	int a=10;
+}
+class B extends A {
+	int a=20;
+	void dis1() {
+		int a=30;
+		System.out.println("a="+a);
+		System.out.println("this a="+this.a);
+		System.out.println("super a="+super.a);
+		
+	}
+}
+class DemoTest {
+	public static void main(String args[]) {
+	B obj1 = new B();
+	obj1.dis1();	
+	}
+}	
+
+
+this() and super() : 
+
+this() : this() is use to call same class constructor like constructor chaining. 
+	It must be inside a constructor and first statement inside a constructor. 
+
+class Employee {
+	Employee() {
+	this(100);	//calling parameterized constructor - int 
+		System.out.println("Employee()");
+	
+	}
+	Employee(int x) {
+	this(1,"Ravi");
+		System.out.println("Employee(int)");
+	}
+	Employee(int x, String y) {
+		System.out.println("Employee(int,string)");
+	}
+}
+class DemoTest {
+	public static void main(String args[]) {
+	Employee emp1 = new Employee();	
+	}
+}	
+
+super() : super() is use to call sub class constructor to super class constructor. 
+	By default every sub class constructor contains super() which help to call super class constructor.
+	super() must be first statement inside a constructor. 
+
+class Employee {
+	Employee() {
+		System.out.println("Employee()");
+	}
+	Employee(String name) {
+		System.out.println("Employee(string)");
+	}	
+}
+class Manager extends Employee {
+	Manager() {
+		super("Ravi");
+		System.out.println("Manager()");
+		
+	}
+}
+class DemoTest {
+	public static void main(String args[]) {
+	Manager mgr = new Manager();
+	}
+}	
+
+
+using super() and this() example 
+
+class Employee {
+	Employee() {
+		System.out.println("Employee()");
+	}
+	Employee(String name) {
+		this();
+		System.out.println("Employee(string)");
+	}	
+}
+class Manager extends Employee {
+	Manager() {
+		super("Ravi");
+		System.out.println("Manager()");
+		
+	}
+}
+class DemoTest {
+	public static void main(String args[]) {
+	Manager mgr = new Manager();
+	}
+}	
+
+
+object creation using Runtime polymorphism 
+
+creating object of sub class and super class reference (super class may be 
+normal java class or abstract class or interface).
+
+
+super class object and sub class reference not possible. 
+
+class Employee {
+	void dis1() {
+		System.out.println("Employee dis1() method");
+	}	
+}
+class Manager extends Employee {
+	void dis1() {
+		System.out.println("dis1() method - Override by Manager");
+	}	
+	void dis2() {
+		System.out.println("Manager dis2() method");
+	}
+}
+class DemoTest {
+	public static void main(String args[]) {
+	Employee emp1 = new Employee();
+	emp1.dis1();
+	
+	Manager mgr1 = new Manager();
+	mgr1.dis1();	
+	mgr1.dis2();
+	
+	Employee emp2 = new Manager();  // Runtime polymorphism 
+	emp2.dis1();	// using this reference we can call only those methods which 
+			//belong to super class or only overrided methods	
+	//emp2.dis2();
+	}
+}	
+
+
+
+packages : package is a collection of classes and interfaces. 
+
+2 types 
+
+1. user-defined package 
+2. pre-defined package or built-in package. 
+
+
+				eduction 
+
+		school				college 
+
+		Attendance 			Attedance 
+
+		syntax 
+
+		package packagename;
+
+package com;
+class DemoTest {
+	public static void main(String args[]) {
+	System.out.println("Welcome to User-defined package");	
+	}
+}	
+
+
+compile the program using command as 
+
+javac className.java 
+
+After compilation create the directoy with packageName 
+and copy/paste .classfile 
+
+then to run the application 
+
+java packageName.class 
+
+eclipse IDE 
+
+
+	Access specifiers : 
+
+	private : private we can use with instance variable, static variable, non static method 
+		static method, constructor but not with local variable and class. 
+
+	default(nothing) : we can use with all. 
+
+	protected :protected we can use with instance variable, static variable, non static method 
+		static method, constructor but not with local variable and class.
+
+	public :public we can use with instance variable, static variable, non static method 
+		static method, constructor as well as class but not with local variable.
+
+	
+
+
+
+
+
+
+
+		
+
+
+
+
+
+	
+	
+
+
+
+
+
+
 
 
 
