@@ -1278,15 +1278,168 @@ eclipse IDE
 
 	private : private we can use with instance variable, static variable, non static method 
 		static method, constructor but not with local variable and class. 
-
+	scope : within in a same class. 
+	
 	default(nothing) : we can use with all. 
-
+	scope : within in a same package. 
+		
 	protected :protected we can use with instance variable, static variable, non static method 
 		static method, constructor but not with local variable and class.
-
+	scope : within in a same package other package if it is a sub class. 
+	
 	public :public we can use with instance variable, static variable, non static method 
 		static method, constructor as well as class but not with local variable.
+	scope : same package as well as other package. 
 
+
+
+
+	pre-defined package 
+
+	java					javax (extendiable)----> Root packages. 
+
+	lang					swing  
+	io 					sql 
+	util 					rmi 
+	awt 					net
+	sql 					servlet 
+	net 					jms 
+	rmi 					ejb 
+
+
+	etc 					etc 
+
+	By default every java program imported lang package. 
+
+	By default every java program extends Object class. 
+
+	String : Combination of one or more than one character enclosed in double quote. 
+		In Java String is pre-defined class part of lang package. 
+	syntax 
+
+	String str1 = "Welcome to Java training";
+	String str2 = new String("Welcome to Java Training");
+
+	String is known as immutable class. 
+	Immutable means we can't change. 
+
+		
+	StringBuffer 
+	StringBuilder 
+
+	Both are mutable string class. 
+
+	StringBuffer by default all methods are synchronized. Because of this performance wise slow. 
+
+	synchronized only one thread can execute that code. 
+
+	
+		Exception Handling 
+
+		Exception : Exception is a object which occurs when unexpected or abnormal conditions 
+		during the execution of a program. 
+
+		Using some technique we have to handle the exception. 
+
+					java 	
+
+		compile program 				run program 
+
+		compile time error 				run time error 
+
+		syntax error 
+		or 						  error 
+		typo error 	
+							Error 			Exception 
+
+		Error and Exception both are pre-defined classes part of lang package. 
+
+		Error : It is a type of run which generate at the run time
+		 which we can't handle it. 
+		ex : JVM crash, software or hardware issue. 
+
+		Exception : It is a type of run which generate at the run time
+		which we can handle it. 
+		ex : Divided by Zero.
+
+					Object 
+
+					Throwable 
+
+			Error 				Exception 
+
+						
+					checkedException 		unchecked exception 
+					(type of exception)
+
+					SQLException 			RuntimeException 
+					IOException 
+					InterruptedException 		ArithmeticException 
+								ArrayIndexOutOfBoundsException 
+								NumberFormatException 
+								NullPointerException 			
+					etc 			etc
+
+			all unchekced exception are sub class of RuntimeException. 
+
+			But all checked exception directly or indirectly extends Exception. 
+
+			to handle both checked as well as unchecked exception java provided 
+			5 keywords 
+
+		1. try 
+		2. catch 
+		3. finally 
+		4. throw 
+		5. throws 
+
+		try - catch block 
+
+		try {
+
+		}catch(Exception e) {
+
+		}
+
+		try with single catch : In type of exception command task or solution. 
+
+		try with multiple catch --> Depending upon the exception specific task or solution. 
+
+		try : the code 1 line or multi generate exception, we have to keep in try block 
+
+		catch : this block execute only if any exception generate. 
+
+		finally : This block execute 100% sure if any exeption generate or not generate. 
+
+		
+		try -- catch 
+
+		try -- multiple catch 
+
+		try --catch --finally 
+
+		try --multiple catch --finally 
+
+			try --finally 
+
+		finally block is use to close the resources like database or file handling 
+
+		
+		throw : this keyword is use to raise or generate pre-defined or user-defined exception 
+		depending upon the conditions. 
+
+		syntax 
+
+		throw new Exception();
+
+		or 
+
+		throw new ExceptionSubClass();
+
+
+		
+						
+	
 	
 
 
