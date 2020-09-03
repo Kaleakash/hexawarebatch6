@@ -1437,10 +1437,219 @@ eclipse IDE
 		throw new ExceptionSubClass();
 
 
+		throws : this keyword is use to throw exception to caller methods. 
+
+		syntax 
+
+		returnType methodName(parametterList) throws Exception {
+
+		}
+
+		void display() throws Exception,ExceptionSubClass {
+
+		}
+
+		checkedexception 
+
+		if code throw checked exception we can't compile the program without 
+		exception handling. 
+
+		checked exception check twice compile time as well as run time. 
+
 		
-						
+		Day 5 03/09/20
+
+	
+	int a;
+
+	a=10
+
+	a=20;
+
+	array :
+
+	int abc[];
+
+	class Employee {
+		int id;
+		String name;
+		float salary;
+	}	
+
+	Employee emp = new Employee();
+	emp.id =100;
+	emp.name = "ravi";
+	emp.salary = 12000;
+
+
+	array object :
+
+	syntax 
+
+	className objectName[]=new className[size];
+
+	Employee emps[]=new Employee[100];
+
+	zero object of Employee class	
+	array is one type of reference data type so array object created. 
+
+	emps[0]=new Employee();
+	emps[1]=new Employee();
+	emps[0].id=100;
+	emps[1].id=101;
+	emps[99]=new Employee();		
+	
+	Collection Framework : Collection framework contains set of classes and interfaces 
+	which help to store collection of object or elements of any types like int, float 
+	string or user-defined class object. 
+
+	As well as provided set of methods which help add elements dynamically, remove, search, 
+	iteratre very easily. 
+
+				
+	Collection framework is part of util package. It is like a data structure in Java. 
 	
 	
+			Collection ----> interface 
+
+
+	List		Set		Queue 			Map ---> interfaces 
+
+	List, Set and Queue internally extends Collection but Map doesn't extends Collection. 
+
+	List : It allow duplicate elements. It maintains the order using index position. 
+
+	Set : It doesn't allow duplicate elements. Some clases under set maintains order, unorder 
+		and sorted by default ascending. 
+
+	Queue : First In First Out .
+
+	Map : It allow to store information in the form of key-value pairs. 
+	Where key is unique and value may be duplicate. 
+	some classes under map maintains order, unorder and sorted by default. 
+
+	List : Below classes comes under the List 
+		Theses are classes directly or indirectly implements List interface 
+		ArrayList 
+		Normal array allow to store same type of values. 
+		But ArrayList can store any type of values. 
+		Normal array we have create the memory size. 
+		But ArrayList memory size increase dynamically.
+		In between adding or removing in normal array very difficutl. 
+		But In ArrayList we can do very easily. 
+		
+		LinkedList :
+			In Java by default LinkedList is consider as double linked list. 
+			Node :
+
+				1st part	2nd part		3rd part 
+
+			  null<-----             value                   ------> next node. 
+			If we adding or removing elements again and again then LinkedList is good option. 
+			If we retreive the elements again and again ArrayList is good option. 
+
+			
+		Vector : Vector is legacy class(old) class. by default all methods are synchronized. 
+			Work is safe but slow in performance. 
+			
+		Stack : First in Last Out. 
+		
+	
+	Set : Below clases comes under the Set 
+		These are classes directly or indirectly implements Set interfaces 
+		Doesn't allow duplicate 
+		HashSet	:		unorder 
+		LinkedHashSet	:	order 
+		TreeSet 	:	sorted by default asc. In TreeSet we have to store same type value. 
+		
+	Queue : FIFO
+		PriorityQueue
+			: It retrieve the records base upon the priority(lower priority).
+
+			 
+
+	Map : Key- value pairs:
+				Where key is unique and value may be duplicate. 
+		HashMap 	: Unorder 	
+		LinkedHashMap 	: Order 
+		TreeMap		: Sorted using key by default asc 
+		Hashtable 	: Legacy class and sychrornized. 
+
+		
+
+	Retrieve the elements from collection of classes 
+
+	1. for each loop 
+	2. Iterator 		: only forward direction 
+	3. ListIterator 	: forward as well as backward direction. 
+
+	
+	CollectionFramwork with Generics help to store hetrogenouse elements. 
+
+	CollectionFramewor with Generics help to store same type of values. 
+
+	syntax 
+
+	CollectionClass<Type> objectName = new CollectionClass<Type>();
+
+	Type : It may be Integer, Float, String, or user-defined class objects. 
+
+	
+
+	Java 8 Features 
+
+	Interface : From java 8 onwards interface can contains method with body. But 
+	method must with default or static keyword. 
+	
+	default methods : If interface contains default method with body. The class which 
+	implements that interface no mandatory to override that method.If they want to they can 
+	override. 
+
+	static method : We can write method with body in interface but method must be static. 
+	static method can't override it. This method we have to call through interfaceName.methodName
+
+	
+	Inner class : 
+		1. non static inner class 
+		2. static inner class 		event base programming 
+						awt/swing or Android. 
+									
+		2. Anonymous inner class 
+				
+	Lambda Expression or sytax 
+		
+	But using Lambda expression java became functional programming language. 
+	
+	Within a method or function we can write another functions or methods. 
+
+	Lambda expression is anonymous inner function or methods. 
+
+	If you want use the lambda expression the function must functionalInterface. 
+
+	Fuctional interface : the interface contains only one method is known as functional interface. 
+	It must be cotains only one abstract method. Default as well as static more than one no problem.
+
+	
+	@FunctionalInterface 
+	
+	
+	 
+				
+
+
+
+
+
+		
+		
+							
+	
+	When we display user-defined class reference in println internally it will call 
+	toString() which belong to Object class. 
+	That methods display the information in the form packageName.className@code 
+	If you want meaningful message then we have to override toString() in user-defined class. 
+
+		
 
 
 
