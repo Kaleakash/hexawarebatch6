@@ -1,0 +1,60 @@
+Datbase Conectps & SQL (MySQL)  
+•	Introduction to Database, Data models, Database keys, Database design 
+•	Normalization
+•	ER diagram & Relationships
+•	DDL Statement with Constraints 
+•	DML 
+•	DQL
+•	Joins and Subquery
+
+Programming Fundamentals (Java )
+•	Basics of OOPS
+-	Class & Object
+-	Encapsulation
+-	Abstraction
+-	Inheritance
+-	Polymorphism
+•	Basics
+-	Variables & Access specifiers
+-	Constructor
+-	Static & Final
+•	Exception
+-	Compile time & Runtime exception
+-	Handling Mechanism
+-	User defined exception
+•	Collection
+-	List & Set
+-	Map
+-	Generics
+•	Java 8 features
+•	JDBI		jdbc 		jdbi(hexaware) 		orm (hibernate/jpa)	
+
+Web Programming (HTML, CSS & JavaScript ) 
+•	Introduction to Web Application 
+-	Client-Server Architecture - Overview 
+-	Http protocol and its method
+-	Web and Application Server
+-	Overview - Web services 
+-	SOAP and Restful Web services - Introduction
+•	HTML/HTML5
+-	Basic Tags
+-	Elements and Attributes
+-	Link, List and Table
+-	Images and forms
+-	New Tags of Html5
+-	Graphics
+-	Video and Audio Support
+-	Dynamic Tables 
+-	Forms
+-	SVG
+•	CSS3
+-	Inline, Internal and External CSS
+-	Selectors
+-	2D Transforms and Transition
+-	Animation
+•	Java Script
+-	Introduction
+-	Variables, Data type and Operators
+-	Pop up Boxes
+-	Functions, Control statement and Loop 
+-	Events

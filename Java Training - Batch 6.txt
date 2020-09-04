@@ -1626,23 +1626,12 @@ eclipse IDE
 
 	If you want use the lambda expression the function must functionalInterface. 
 
-	Fuctional interface : the interface contains only one method is known as functional interface. 
+	Functional interface : the interface contains only one method is known as functional interface. 
 	It must be cotains only one abstract method. Default as well as static more than one no problem.
 
 	
 	@FunctionalInterface 
 	
-	
-	 
-				
-
-
-
-
-
-		
-		
-							
 	
 	When we display user-defined class reference in println internally it will call 
 	toString() which belong to Object class. 
@@ -1651,8 +1640,87 @@ eclipse IDE
 
 		
 
+	Day 6 - 94/09/20 
+
+		
+	Stream API : Stream is API is use to load the data from collection of classes or array 
+	on demand. 
+	Stream is temporary memory or it is abstraction between source and target. 
+
+	Stream is provided pipe features. which help to flow the data on demand. 
+
+	Source ----------> one or more Interdiate Operater or Method -------------> Terminal Operator or methods. 
+
+	Interdiate operater return type is stream itself. 
+	Terminal Operator return type is non stream means boolean or int or void. 
+
+Stream API intenrally use type of pre-defined functional interface with lambda Expression. 
+
+	two 
+	java.util.stream.*;
+
+	java.util.function.*;
+
+	top core functional interfaces. 
+
+	1. Function : apply() : It takes T parameter and return R value. 
+	2. Consumer : accept() : It takes T parameter and no return type. 
+	3. Supplier : get() : No parameter but return T value. 
+	4. Predicate : test() : It takes T as a parameter and return boolean value. 
+
+	
+
+	JDBC and JDBI : 
+
+	Java Database Connectivity :
+ 
+	Java Database Interface : 
+
+	JDBC	JDBI 	ORM(Hibernate/JPA)
+	
+
+	JDBC or JDBI : Both are api (application programming interface) which provide set of classes and interfaces which help to 
+	store and retrieve record from database through Java technologies. 
 
 
+	Steps 
+
+		1. Load the Driver : Driver is a pre-defined class provided by vendor(whose database going to connect)					
+				which help to connect the database. 
+
+			types of Driver. 
+
+			4 types 
+
+			1. type 1: jdbc odbc bridge driver (out dated from java8 onwards). 
+			2. type 2 : jdbc native api driver 
+			3. type 3 : jdbc net protocol driver 
+			4. type 4 : jdbc thin driver or pure driver. 
+
+			Class.forName("driverName");
+
+		2. Establish the connection 
+			a. JDBC - Using connection and DriverManager 
+			interface we can connect to database after providing url,username and password. 
+			b. JDBI : DBI class which help to connect the database after providing url,username and password. 
+
+		3. 	DML
+			a. create Statement, PreparedStatement or CallableStatement 
+				These interface providing set of methods which help to store(DML)
+			b. We have to create DaoInterface which contains 
+			@SqlQuery, @SqlUpdate, @Bind() and @SQLMapper anntoation which help to store.(DML)
+						
+	
+		4. 	retrieve 
+
+			a. In JDBC we have to take the help of ResultSet interface 
+			b. In JDBI we have to take the help of ResultSetMapper interface 
+
+		5. close the resources 
+		
+
+
+	
 
 
 
