@@ -1,0 +1,240 @@
+
+
+	Web Application 
+
+Core Java (J2SE/JavaSE/JSE)
+
+Java Standard Edition : Standalone application or desktop application 
+
+J2EE/JavaEE/JEE : Java Enterprise Edition : It is mainly use to develop web application. 
+
+3 modues : Servlet /JSP(Java Server Pages)/EJB (Enterprise Java Bean)
+
+	Unix : CURL 
+	https://www.google.com ---> URL----> GUI (Browser)	
+
+		req(http/https)------------>
+
+Client 					Server 
+		<--------res(http/https)----------
+
+	http: Hypertext transfer protocol. 
+	www: world wide web 
+	google : domain 
+	com : commerical 
+
+					HTML/HTML5
+					CSS/CSS3
+					JavaScript :
+					JavaScript was mainly use to do validaion on 
+					client side. 
+
+					WE can do validation nowadays using 
+					JavaScript or HTML5 features. 
+
+					JEE : Servlet/JSP/EJB 
+					Spring boot 
+				
+					Asp.net : asp/c#
+
+					Php 
+
+					CGI 
+
+					Python 
+
+					Node JS(Using JavaScript)
+						
+	Server :
+		2 types 
+	1. Web Server :
+	2. Application Server :				
+			war file 
+	Container : It is a part of server which also known as engine. It is responsible to execute servlet,jsp and ejb 
+	programs. In Servlet,JSP and EJB no main method. Here container load the class, create the objects, 
+	call the life cycle methods and destroy those object if no client calling that application. 
+
+	Web Container : If server is a type of web server which contains only one type of container ie web container. 
+	Web container is responsible to execute servlet and jsp application. 
+	Example of web server is tomcat. 
+
+	Ejb Container : If server is type of application server which contains two type of container one is web container responsible to execute servlet and jsp. Second ejb container responsible to execute ejb application. 
+	As well as application server provide extra services like connection pooling, thread managmenet, 
+	resource management, security etc. 
+	Example of application server is : WebLogic, JBoss, Glashfish etc. 
+	
+	HTML/HTML5+CSS/CSS3+JavaScript + Servlet/JSP/EJB or Spring framework (Spring boot)
+
+	Web Service :
+
+	req(https)				java(req)
+Client 			HDFC 		XML/JSON	HSBC or SBI 
+	res(https)		JEE/Spring boot 	.net(res)		asp.net or php or python or node js 	
+	
+	Java : Java is pure object and platform independent programming language but language dependent. 
+
+	Web Service : Giving the Service for web application when both application running using 
+	same/diffirent technologies may be same/different OS. 
+
+	Web Service is platform independent as well as language independent as well as browser independent. 
+
+	2 types 
+	1. SOAP base web service : It is standard web web service which is base upon the SOA (Service Oriented 
+	Architecture). XML
+
+	XML : eXtensible Markup Language : Xml is use to hold the data or transfer the data or carry the data 
+	from one application to another application. 
+	
+	SOAP : Simple Object Access Protocol. 
+				Data must be only in the form of XML. 
+				And xml is very heavy format. 
+	2. RestFull Web Service : It is use to expose your resource that servlet/jsp as web service. 
+	Data may be in form like xml or json or plain text or media type etc. 
+	It is light weighted. 
+
+	JSON : JavaScript Object Notation . It is like a map in Java. 
+	RestFull web service using HTTP/https protocol 
+		
+	JAX_RS : Java API for XML RestFull Web Service 
+			Using jersey tool 
+			Using any other tools 
+
+	Spring boot : We can develop RestFull Web Service 
+
+	http protocol methods 
+			CRUD Operation (Create/Read/Update/Delete)
+	get() : Get the Resources (select query) with where clause 
+	post() : Create Resources (insert query) 
+	put() : Update Resoruces(update query)
+	delete() : Delete Resources (delete query)
+
+	HTML/HTML5
+
+	Hypertext markup language :It is use to create the web pages. The pages may be static or dynamic web page. 
+	HTML provided lot of pre-defined tags or elements. 
+
+	syntax for tag 
+
+	<tagName>	opening tag 
+
+	</tagName>	closing tag 
+
+	<tagName/>	self closing tag 
+
+	html is not a case sensitive. 
+
+	1. html tag 
+
+	2. head 
+
+	3. body 
+
+	4. title tag 
+
+	5. paragraph tag 
+
+	<p>	</p>
+
+	6. heading tag 
+		6 types 
+
+		h1 	largest 
+
+		h6	smallest 
+
+	7. break tag 
+	
+	8. Attribute : Properties of a tags. Attribute always we have to use in opening tag in the form of name-value 
+	pairs 
+	
+	syntax 
+
+	<tagName name1="value1" name2='value2' name3=value3>		</tagName>
+
+	value my be in single quote or double quote or without quote no problem.
+	but if value contains more than one world then it must be single or double quote. 
+
+	In XML value must be single or double quote mandatory. 
+
+	9. font tag : This tag is use to change the color, style and size of font. 
+
+	10. hyperlink :
+
+	<a href="pageName.html">Text</a>
+
+	a ---> anchor 
+	href---> hyperreference 
+
+	11. Image tag 
+
+	<img src="NameOfImage.jpeg/jpg/gif/bmt/png"/>
+
+	12. List tags 
+
+		a. Unorder list 
+		b. Order list 
+		c. Definition List 
+
+	13. Table Tags 
+
+	         Employee Details 
+
+	EmpId	Name	Salary 
+	100	Ravi	12000
+	101	Ramesh	14000
+	102	Rajesh	16000
+
+		
+	14. Forms tag 
+
+	Login Page 
+
+	html forms upto 4 version 
+
+	<input type="text/password/radio/checkbox/button/submit/reset/file"/>
+	
+
+	<html>
+	<head>
+		<title>This is my web page</title>
+	</head>
+
+	<body>
+		<h2>Login Page</h2>
+		<form action="demo.html" method="post">
+		<label>UserName:</label>
+		<input type="text" name="uname"/><br/>
+		<label>Password:</label>
+		<input type="password" name="pname"/><br/>
+		<input type="button" value="Sign In!"/>
+			<input type="submit" value="Sign In!"/>
+		<input type="reset" value="Clear Data!"/>
+		<input type="button" value="Reset"/>
+		</form>
+	</body>
+</html>
+
+	Till HTML5 forms support only two methods get or post. It doesn't support put and delete methods. 
+
+	If we want to call put or delete methods then we have to use 
+	AJAX, RestClient using Java, Asp.net or Python, Angular / React JS
+
+	To recieve the value from forms 
+
+	1. Servlet
+	2. JSP 
+	3. JavaScript 
+	4. RestFull Web Service 
+	
+	
+	
+	html5 forms 
+
+	
+	
+	
+	
+	
+	
+	
+				

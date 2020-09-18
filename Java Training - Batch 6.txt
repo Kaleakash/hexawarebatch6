@@ -1719,9 +1719,38 @@ Stream API intenrally use type of pre-defined functional interface with lambda E
 		5. close the resources 
 		
 
+		Maven or Gradle : Both are build tools which help to maintains the dependencies. 
+
+		
+
+		Database table --------------> JavaBean class 
+
+			columns ------------->variables names 
+
+		
+			
+
+
+
+
+		File Handling : In java file handling do using stream 
+		stream : flow of data 
+
+						stream 
+
+		byte							char 
 
 	
+Input				Output 			Input			Output 
 
+InputStream		OutputStream			Reader			Writer 
+
+
+DataInputStream 	DataOutputStream 		FileReader 		FileWriter 
+FileInputStream		FileOutputStream 		BuffereReader		BufferedWriter 
+BufferedInputStream 	BufferedOutputStream 					PrintWriter 
+			PrintStream 
+ObjectInputStream	ObjectOutputStream 
 
 
 
