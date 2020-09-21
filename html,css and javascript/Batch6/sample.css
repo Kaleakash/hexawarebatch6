@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+div{
+    width: 200px;
+    height: 300px;
+    float: left;
+    border: 5px solid springgreen;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50pt;
+  
+}
+#d1{
+    transform: rotateY(40deg);
+}
+
+#d2 {
+    transform: skewX(30deg);
+}
+#d3 {
+    animation-name: myanim;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myanim{
+ 0% {background-color: red;}
+ 25% {background-color:green}
+ 50% {background-color:blueviolet}
+ 75% {background-color:cyan}
+ 100% {background-color:deepskyblue}
+}

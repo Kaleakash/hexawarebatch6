@@ -226,13 +226,413 @@ Client 			HDFC 		XML/JSON	HSBC or SBI
 	3. JavaScript 
 	4. RestFull Web Service 
 	
+	CSS : Cascadding Style Sheet 
+
+	With help of CSS we can apply more formatting style to web page. 
+	With help of CSS we can achieve separation of concern. 
 	
+	3 types of css 
+
+	1. inline CSS
+	2. internal CSS or embedded css 
+	3. external CSS
+
+	inline CSS
+
+	syntax 
+
+	<tagName style="property:value;property:value">	</tagName>	
+
+	p, h1, h2, h6 font, table, div, span 
+
+	2. internal CSS or embedded CSS 
+
+	syntax 
+
+	<style>
+		selector {property:value;property:value}
+	</style>
 	
+	This tag must in between head tag 
+
+	Type of selector 
+	1. Universal selector 
+
+	* 
+	* {color:orange}
+
+	2. specific selector 
+
+	tagName {property:value}
+	
+	p,  h1, h6, font, table, tr, form etc 
+
+	p{color:orange}
+	h1{color:green}
+
+	3. multiselector 
+
+	tagName,tagName {property:value}
+
+	p,h1{color:orange}
+
+
+	4. class selector 
+
+	tagName.className{property:value}
+
+	p.abc{color:orange;font-size:20pt;}
+	p.xyz{color:blue;font-size:10pt;}
+
+	5. global class selector 
+
+	.mno{color:yellow;font-size:30pt;}
+
+	6. id selector 
+
+	class : more than one tag can contains same class name means class is a groups of tags.  
+	id : every tag we have to provide unique id. 
+
+	#b1{color:green}
+
+	external CSS
+
+	FileName.css 
+
+	write the rules 
+
+	Connect to external css file 
+	
+	<link rel="stylesheet" type="text/css" href="demo.css"/>
+
+		
 	html5 forms 
 
+JavaScript (ES5) ECMA
 	
+JavaScript : JavaScript was object based interpreter scripting language. 
+
+Using JavaScript we can make dynamic web page as well as we can do client side validation. 
+
+syntax 
+
+<script type="text/JavaScript" Language="JavaScript">	opening tag 		
+
+</script>			closing tag 
+
+This tag we can write in between head tag or body tag or without any tags. 
+
+Using JavaScript we can achieve programming on html web page. 
+
+First Example 
+
+<html>
+	<head>
+	<script type="text/JavaScript">
+	document.write("Welcome to JavaScript from head tag")
+	</script>
+	</head>
+
+	<body>
+	<h1>Welcome to HTML Web Page</h1>
+	<script type="text/JavaScript">
+	document.write("Welcome to JavaScript from body tag")
+	</script>
+	</body>
+</html>
+
+Second Example 
+
+<html>
+	<head>
 	
+	</head>
+
+	<body>
+	<h1>Welcome to HTML Web Page</h1>
+	<script type="text/JavaScript">
+	document.write("Welcome to JavaScript from body tag<br/>")
+document.write("<font color='red'>Welcome to JavaScript from body tag</font><br/>")
+	document.write("Welcome to JavaScript from body tag<br/>")
+	</script>
+	</body>
+</html>
+
+Variable : to declare variable in JavaScript we have to use var keyword. 
+
+	syntax 
+
+	var variableName;
+
+	In JavaScript data types come in a picture base upon the value. 
+
+	1. undefined 
+	2. number 
+	3. string 
+	4. boolean 
+	5. object reference 
+
+	Data Types Example 
+
+	<html>
+	<head>
 	
+	</head>
+
+	<body>
+	<h1>Welcome to HTML Web Page</h1>
+	<script type="text/JavaScript">
+	var fname;
+	var lname="Deep";
+	var n=10;
+	var m = 10.10;
+	var res = true;
+	var obj = new Date();
+	document.write("FName value is "+fname);
+	document.write("<br/>LName value is "+lname);
+	document.write("<br/>n value is "+n);
+	document.write("<br/>m value is "+m);
+	document.write("<br/>res value is "+res);
+	document.write("<br/>Obj value is "+obj);
+	</script>
+	</body>
+</html>
+
+
+	Operators 
+
+	1. +,-,*,/,%
+
+	2. >,>=, <, <= , == , !=
+
+	3. &&, ||, ! 
+
+	4. =
+	
+	5. ===
+
+	6. typeof 
+
+	== check only value 
+
+	=== check value as well as their data types. 
+
+	<html>
+	<head>
+	
+	</head>
+
+	<body>
+	<h1>Welcome to HTML Web Page</h1>
+	<script type="text/JavaScript">
+	var a=10;
+	var b="10"
+	document.write("==")
+	document.write("<br/>");
+	document.write(a==b);
+	document.write("<br/>");
+	document.write("===")
+	document.write("<br/>");
+	document.write(a===b);
+	</script>
+	</body>
+</html>
+
+	typeof 
+
+	<html>
+	<head>
+	
+	</head>
+
+	<body>
+	<h1>Welcome to HTML Web Page</h1>
+	<script type="text/JavaScript">
+	var a;
+	document.write("Type of Datatype is "+typeof(a))
+	a=10;
+	document.write("<br/>Type of Datatype is "+typeof(a))
+	a=10.10
+	document.write("<br/>Type of Datatype is "+typeof(a))
+	a=true
+	document.write("<br/>Type of Datatype is "+typeof(a))
+	a="Ravi";
+	document.write("<br/>Type of Datatype is "+typeof(a))
+	a = new Date();
+	document.write("<br/>Type of Datatype is "+typeof(a))
+	</script>
+	</body>
+</html>
+
+	If statement 
+	if else 
+	nested if 
+	if else if 
+
+	switch statement 
+
+	looping 
+		while loop 
+		do while loop
+		for loop 
+
+	function and events 
+
+	functions : 
+
+	types of functions 
+
+	1. user-defined functions 
+	2. pre-defined function 
+
+	user-defined function syntax 
+
+	function functionName(parameterList) {
+
+	}
+
+	function functionName(parameterList) {
+
+		return anyValue;
+	}	
+
+	functions example 
+
+	<html>
+	<head>
+	<script type="text/JavaScript">
+	function info() {
+		//document.write("This is user-defined function")
+		alert("Welcome to User-defined function");
+	}
+	function takeData() {
+	var name = prompt("Enter the name");
+		alert("Welcome user "+name);
+	}
+	function addNumber(a,b) {
+		var sum = a+b;
+		alert("Sum of two number is "+sum);
+	}
+	function sayHello(name) {
+		return "Welcome "+name;
+	}
+	</script>	
+	</head>
+
+	<body>
+	<script type="text/JavaScript">
+	info();
+	takeData();	
+	addNumber(100,200);
+	var msg=sayHello("Ajay");
+	alert(msg);
+	</script>
+	</body>
+</html>
+
+Events : Event is a interaction between user and html tags or components (button, p, div, radio button, submit etc)
+
+Event provide bridge between html and JavaScript code 
+
+In JavaScript all events start with pre-fix on followed by event name 
+
+onClick 
+onDblClick
+onMouseOver 
+onMouseOut 
+onKeyUp
+onKeyDown
+onSubmit
+onChange 
+onFocus
+onBlur 
+
+etc 
+
+
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function info() {
+		alert("Welcome to User-defined function");
+	}
+	</script>	
+	</head>
+
+	<body>
+	<input type="button" value="Click Here!" onClick="info()">	
+	</body>
+</html>
+
+
+	We can do validation 
+
+	using JavaScript 
+	using HTML5 
+
+	DOM : Document Object Model : DOM provide set of property and functions which help to 
+	read, update and write html tag values. 
+
+	<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function validate() {
+	var name = document.getElementById("u1").value;
+	var pass = document.getElementById("p1").value;
+		if(name.length==0) {
+		alert("User name is required") 
+		return false;
+		}else if(pass.length==0) {
+		alert("Password is required");
+		return false;
+		}else if(name=="Raj" && pass=="123"){
+		alert("Successfully Login");
+		return true;
+		}else {
+		alert("Failure try once again");
+		return false;
+		}
+	}
+	</script>	
+	</head>
+
+	<body>
+	<h2>Login Validation using JavaScript</h2>
+	<form action="home.html" onSubmit="return validate()">
+	<label>UserName:</label>
+	<input type="text" name="uname" id="u1"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" id="p1"/><br/>
+	<input type="submit"/>
+	<input type="reset"/>
+	</form>	
+	<br/>
+	<h2>Login Validation using HTML5 </h2>
+	<form action="home.html" >
+	<label>UserName:</label>
+	<input type="text" name="uname" required /><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" required="true"/><br/>
+	<input type="submit"/>
+	<input type="reset"/>
+	</form>
+	<br/>
+	<form action="home.html">
+	<label>PhNumber</label>
+	<input type="number" name="phnumber" required=true/><br/>
+	<label>Email</label>
+	<input type="email" name="email" required=true/><br/>
+	<label>URL</label>
+	<input type="url" name="url" required=true/><br/>
+	<label>CompanyCode</label>
+	<input type="text" name="cc" required=true pattern="HX\d{3}"/><br/>
+	<input type="submit"/>
+	</form>
+	</body>
+</html>
+
+
 	
 	
 	
